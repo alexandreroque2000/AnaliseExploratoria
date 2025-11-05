@@ -5,5 +5,3 @@ O Commit é um comando do Git que registra as mudanças feitas no repositório l
 
 Análise dos dados obtidos com os gráficos:
 
-Observando os gráficos, podemos chegar a diversas conclusões. A idade dos prisioneiros se mantem bem equilibrada, mas com uma quantidade mais reduzida na faixa dos 25 anos, e acima dos 80 anos.
-
