@@ -15,19 +15,14 @@ base_trabalho$reincidente = factor(base_trabalho$reincidente, levels = c(0,1),la
 
 #média
 media_periculosidade = mean(base_trabalho$score_periculosidade) #média
-
 #primeiro quartil
 pq_periculosidade = quantile(base_trabalho$score_periculosidade, probs = 0.25) #primeiro quartil
-
 #mediana
 mediana_periculosidade = quantile(base_trabalho$score_periculosidade, probs = 0.50) #mediana
-
 #terceiro quartil
 tq_periculosidade = quantile(base_trabalho$score_periculosidade, probs = 0.75) #terceiro quantil
-
 #variância
 var_periculosidade = var(base_trabalho$score_periculosidade) #variância
-
 #desvio padrão
 dp_periculosidade = sd(base_trabalho$score_periculosidade) #desvio padrão
 
@@ -36,19 +31,14 @@ dp_periculosidade = sd(base_trabalho$score_periculosidade) #desvio padrão
 
 #média
 media_idade = mean(base_trabalho$idade)
-
 #primeiro quartil
 pq_idade = quantile(base_trabalho$idade, probs = 0.25)
-
 #mediana
 mediana_idade = quantile(base_trabalho$idade, probs = 0.50)
-
 #terceiro quartil
 tq_idade = quantile(base_trabalho$idade,probs = 0.75)
-
 #variância
 var_idade = var(base_trabalho$idade)
-
 #desvio padrão
 dp_idade = sd(base_trabalho$idade)
 
@@ -57,19 +47,14 @@ dp_idade = sd(base_trabalho$idade)
 
 #média
 media_tempo_preso = mean(base_trabalho$tempo_preso)
-
 #primeiro quartil
 pq_tempo_preso = quantile(base_trabalho$tempo_preso,probs = 0.25)
-
 #mediana
 mediana_tempo_preso = quantile(base_trabalho$tempo_preso,probs = 0.50)
-
 #terceiro quartil
 tq_tempo_preso = quantile(base_trabalho$tempo_preso,probs = 0.75)
-
 #variância
 var_tempo_preso = var(base_trabalho$tempo_preso) 
-
 #desvio padrão
 dp_tempo_preso = sd(base_trabalho$tempo_preso) 
 
