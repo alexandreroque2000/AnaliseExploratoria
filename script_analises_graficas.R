@@ -3,7 +3,6 @@ library(dplyr)
 library(ggplot2) 
 library(readxl) 
 
-
 #Lendo a base de dados
 base_trabalho = read_excel("Base_trabalho.xlsx")
 View(base_trabalho)
@@ -15,6 +14,7 @@ base_trabalho$escolaridade = factor(base_trabalho$escolaridade, levels = c(1,2,3
 base_trabalho$casado = factor(base_trabalho$casado, levels = c(0,1),labels = c("Não","Sim"))
 base_trabalho$reincidente = factor(base_trabalho$reincidente, levels = c(0,1),labels = c("Não","Sim"))
 
+#Checando se as variáveis estão corretas
 str(base_trabalho)
 View(base_trabalho)
 
@@ -45,5 +45,6 @@ ggplot(data = base_trabalho, mapping = aes(x = reincidente)) +
   theme_bw() + xlab("Reincidência") + ylab("")+
   labs(title = "Gráfico de barras - Reincidência")+
   theme(plot.title = element_text(hjust = 0.5,face = "bold",size = 14))
+
 
 
