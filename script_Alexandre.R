@@ -16,6 +16,7 @@ base_trabalho$casado = factor(base_trabalho$casado, levels = c(0,1),labels = c("
 base_trabalho$reincidente = factor(base_trabalho$reincidente, levels = c(0,1),labels = c("Não","Sim"))
 
 str(base_trabalho)
+View(base_trabalho)
 
 #Análise sobre os dados faltantes
 faltantes = colSums(is.na(base_trabalho))
@@ -31,19 +32,12 @@ ggplot(data = base_trabalho, mapping = aes(x=idade)) +
   theme(plot.title = element_text(hjust = 0.5,face = "bold",size = 14))
 
 #Fazendo um boxplot da variável tempo_preso
-ggplot(data = base_trabalho, mapping = aes(x = tempo_preso,y = " "))+
-  geom_boxplot(fill = "lightblue") + 
-  theme_bw() + xlab("Meses") + ylab("")+
-  labs(title = "Boxplot - Tempo preso") +
-  theme(plot.title = element_text(hjust = 0.5,face = "bold",size = 14))
+
+boxplot(x = base_trabalho$tempo_preso, main = "Box plot - Tempo preso", ylab = "Meses", col = "lightblue", horizontal = TRUE)
 
 #Fazendo um boxplot da variável score_periculosidade por escolaridade
-ggplot(data = base_trabalho, mapping = aes(x = score_periculosidade, y = escolaridade)) +
-  geom_boxplot(fill = "orange") +
-  theme_bw() + xlab("Score de periculosidade") + ylab("Escolaridade")+
-  labs(title = "Boxplot - Periculosidade por escolaridade")+
-  theme(plot.title = element_text(hjust = 0.5,face = "bold",size = 14))
 
+boxplot(base_trabalho$score_periculosidade~base_trabalho$escolaridade, main = "Boxplot - Periculosidade por escolaridade",xlab = "Score periculosidade",ylab = "Escolaridade",col = "orange",horizontal = TRUE)
 
 #Fazendo um gráfico de barras para a variável reincidente
 ggplot(data = base_trabalho, mapping = aes(x = reincidente)) + 
