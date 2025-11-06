@@ -26,7 +26,6 @@ var_periculosidade = var(base_trabalho$score_periculosidade)
 #desvio padrão
 dp_periculosidade = sd(base_trabalho$score_periculosidade)
 
-
 ##### Medidas da variável idade #####
 
 #média
@@ -42,7 +41,6 @@ var_idade = var(base_trabalho$idade)
 #desvio padrão
 dp_idade = sd(base_trabalho$idade)
 
-
 ##### Medidas da variável tempo_preso #####
 
 #média
@@ -57,8 +55,6 @@ tq_tempo_preso = quantile(base_trabalho$tempo_preso,probs = 0.75)
 var_tempo_preso = var(base_trabalho$tempo_preso) 
 #desvio padrão
 dp_tempo_preso = sd(base_trabalho$tempo_preso) 
-
-
 
 #Criando o gráfico de dispersão entre as variáveis tempo_preso e score_periculosidade
 plot(base_trabalho$tempo_preso,base_trabalho$score_periculosidade, main = "Tempo preso X Periculosidade", xlab = "Meses", ylab = "Score de periculosidade")
