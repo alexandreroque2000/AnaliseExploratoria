@@ -14,17 +14,17 @@ base_trabalho$reincidente = factor(base_trabalho$reincidente, levels = c(0,1),la
 ##### Medidas da variável score_periculosidade #####
 
 #média
-media_periculosidade = mean(base_trabalho$score_periculosidade) #média
+media_periculosidade = mean(base_trabalho$score_periculosidade) 
 #primeiro quartil
-pq_periculosidade = quantile(base_trabalho$score_periculosidade, probs = 0.25) #primeiro quartil
+pq_periculosidade = quantile(base_trabalho$score_periculosidade, probs = 0.25)
 #mediana
-mediana_periculosidade = quantile(base_trabalho$score_periculosidade, probs = 0.50) #mediana
+mediana_periculosidade = quantile(base_trabalho$score_periculosidade, probs = 0.50) 
 #terceiro quartil
-tq_periculosidade = quantile(base_trabalho$score_periculosidade, probs = 0.75) #terceiro quantil
+tq_periculosidade = quantile(base_trabalho$score_periculosidade, probs = 0.75) 
 #variância
-var_periculosidade = var(base_trabalho$score_periculosidade) #variância
+var_periculosidade = var(base_trabalho$score_periculosidade) 
 #desvio padrão
-dp_periculosidade = sd(base_trabalho$score_periculosidade) #desvio padrão
+dp_periculosidade = sd(base_trabalho$score_periculosidade)
 
 
 ##### Medidas da variável idade #####
