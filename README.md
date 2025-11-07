@@ -28,4 +28,4 @@ $$s = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2}$$
 
 - Amplitude: é uma medida de dispersão que indica a diferença entre o maior e o menor valor de um conjunto de dados.
  
-$$A = x_{max}-x_{min}$$
+$$Amp = x_{max}-x_{min}$$
